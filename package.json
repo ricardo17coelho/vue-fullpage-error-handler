@@ -1,10 +1,11 @@
 {
-  "name": "vue-3-template",
+  "name": "vue-fullpage-error-handler",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "author": "Ricardo Coelho<devel@rmorgado.ch>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -44,6 +45,7 @@
     "vue-tsc": "^2.0.19"
   },
   "dependencies": {
-    "vue-i18n": "^9.13.1"
+    "vue-i18n": "^9.13.1",
+    "vue-router": "^4.3.2"
   }
 }

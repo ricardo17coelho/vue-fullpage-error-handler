@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 defineProps({
-  message: { type: String, default: 'from HelloWorld.vue' }
+  message: { type: String, default: 'Welcome!' }
 });
 </script>
 

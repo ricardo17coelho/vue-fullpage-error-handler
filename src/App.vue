@@ -1,14 +1,11 @@
 <template>
-  <HelloWorld />
-  <p class="note">Now, delete me and get to work!</p>
+  <ErrorContainer v-if="error" :error="error" @clear="error = undefined" />
+  <router-view v-else />
 </template>
 
 <script lang="ts" setup>
-import HelloWorld from './components/HelloWorld.vue';
-</script>
+import ErrorContainer from '@/components/ErrorContainer.vue';
+import { useErrorStore } from '@/composables/error-store';
 
-<style lang="postcss" scoped>
-.note {
-  margin-top: 2.5rem;
-}
-</style>
+const { error } = useErrorStore();
+</script>
